@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Italian Pizza Restaurant" />
+    <meta name="author" content="Arnur Kupanov" />
+    <meta
+      name="keywords"
+      content="Restaurant, Italian, Pizza, Pasta, Burgers, Drinks"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/hamburgers.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="swiperjs/css/swiper.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&family=Nothing+You+Could+Do&family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <script async defer src="swiperjs/js/swiper.min.js"></script>
+    <script async defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script async defer src="index.js"></script>
+
+    <title>Pizza</title>
+  </head>
+  <body>
+    <script>
+      function initMap() {
+        const uluru = { lat: 40.758896, lng: -73.98513 };
+        const map = new google.maps.Map(
+          document.querySelector('.contact__map'),
+          {
+            zoom: 15,
+            center: uluru,
+          },
+        );
+        const marker = new google.maps.Marker({ position: uluru, map: map });
+      }
+    </script>
+
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPr45dp05H8HSDDL9T9D0wzQTtZkU2yQY&callback=initMap"
+    ></script>
+
+    <img src="assets/icons/oval.svg" alt="spinner" class="spinner" />
+
+    <div id="root">
+      <header class="header">
+        <nav class="header__nav container">
+          <a class="header__logo">
+            <img src="assets/icons/pizza.svg" alt="pizza-slice" />
+            <span>Pizza</span>
+            <small>DELICIOUS</small>
+          </a>
+
+          <ul class="header__nav-list">
+            <li class="header__list-item">
+              <a href="#home" class="header__nav-link">Home</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#about" class="header__nav-link">About</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#services" class="header__nav-link">Services</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#menu" class="header__nav-link">Menu</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#blog" class="header__nav-link">Blog</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#contact" class="header__nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="hamburger hamburger--collapse"
+          type="button"
+          aria-label="Menu"
+          aria-controls="navigation"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <nav class="header__nav-mobile" id="navigation">
+          <ul class="header__nav-list-mobile container">
+            <li class="header__nav-list-item-mobile">
+              <a href="#home" class="header__nav-link-mobile">Home</a>
+            </li>
+            <li class="header__nav-list-item-mobile">
+              <a href="#about" class="header__nav-link-mobile">About</a>
+            </li>
+            <li class="header__nav-list-item-mobile">
+              <a href="#services" class="header__nav-link-mobile">Services</a>
+            </li>
+            <li class="header__nav-list-item-mobile">
+              <a href="#menu" class="header__nav-link-mobile">Menu</a>
+            </li>
+            <li class="header__nav-list-item-mobile">
+              <a href="#blog" class="header__nav-link-mobile">Blog</a>
+            </li>
+            <li class="header__nav-list-item-mobile">
+              <a href="#contact" class="header__nav-link-mobile">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="home" id="home">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="home__slide-1 swiper-slide">
+                <div class="home__hero-wrapper">
+                  <div class="home__hero container">
+                    <div class="home__text-box">
+                      <span class="home__subtitle">Welcome</span>
+                      <h1 class="home__title">
+                        WE COOKED YOUR DESIRED PIZZA RECIPE
+                      </h1>
+                      <p class="home__text">
+                        At homero insolens oportere eos, saperet percipitur eum
+                        in. Usu at natum semper aperiam.
+                      </p>
+                      <div class="home__buttons">
+                        <button
+                          class="home__btn btn btn--primary u-margin-right-medium"
+                        >
+                          Order Now
+                        </button>
+                        <button class="home__btn btn btn--white">
+                          View Menu
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="overlay"></div>
+                </div>
+              </div>
+
+              <div class="home__slide-2 swiper-slide">
+                <div class="home__hero-wrapper home__hero-wrapper">
+                  <div class="home__hero home__hero--right container">
+                    <div class="home__text-box home__text-box--right">
+                      <span class="home__subtitle">Delicious</span>
+                      <h1 class="home__title">ITALIAN CUISINE</h1>
+                      <p class="home__text">
+                        At homero insolens oportere eos, saperet percipitur eum
+                        in. Usu at natum semper aperiam.
+                      </p>
+                      <div class="home__buttons">
+                        <button
+                          class="home__btn btn btn--primary u-margin-right-medium"
+                        >
+                          Order Now
+                        </button>
+                        <button class="home__btn btn btn--white">
+                          View Menu
+                        </button>
+                      </div>
+                    </div>
+                    <div class="home__img-box">
+                      <img
+                        srcset="
+                          assets/images/pizza-home-1-535.webp   535w,
+                          assets/images/pizza-home-1-894.webp   894w,
+                          assets/images/pizza-home-1-1070.webp 1070w
+                        "
+                        sizes="(max-width: 120em) 28vw,
+                               (max-width: 90em) 36vw, 
+                               (max-width: 48em) 47vw,
+                               100vw"
+                        src="assets/images/pizza-home-1-535.webp"
+                        alt="pizza"
+                        loading="lazy"
+                        class="home__img"
+                      />
+                    </div>
+                  </div>
+                  <div class="overlay"></div>
+                </div>
+              </div>
+
+              <div class="home__slide-3 swiper-slide">
+                <div class="home__hero-wrapper">
+                  <div class="home__hero home__hero--left container">
+                    <div class="home__img-box">
+                      <img
+                        srcset="
+                          assets/images/pizza-home-2-535.webp   535w,
+                          assets/images/pizza-home-2-894.webp   894w,
+                          assets/images/pizza-home-2-1070.webp 1070w
+                        "
+                        sizes="
+                          (max-width: 120em) 28vw,
+                               (max-width: 90em) 36vw, 
+                               (max-width: 48em) 47vw, 100vw
+                        "
+                        src="assets/images/pizza-home-1-535.webp"
+                        alt="pizza"
+                        loading="lazy"
+                        class="home__img"
+                      />
+                    </div>
+                    <div class="home__text-box home__text-box--left">
+                      <span class="home__subtitle">Crunchy</span>
+                      <h1 class="home__title">ITALIAN CUISINE</h1>
+                      <p class="home__text">
+                        At homero insolens oportere eos, saperet percipitur eum
+                        in. Usu at natum semper aperiam.
+                      </p>
+                      <div class="home__buttons">
+                        <button
+                          class="home__btn btn btn--primary u-margin-right-medium"
+                        >
+                          Order Now
+                        </button>
+                        <button class="home__btn btn btn--white">
+                          View Menu
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="overlay"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+
+        <div class="info">
+          <div class="info__content">
+            <ul class="info__left">
+              <li
+                class="info__item"
+                data-aos="fadeIn"
+                data-aos-easing="ease-in-out"
+              >
+                <img src="assets/icons/call.svg" alt="phone" />
+                <div class="info__text">
+                  <h3>000 (123) 456 7890</h3>
+                  <p>A small river named Duden flows</p>
+                </div>
+              </li>
+              <li
+                class="info__item"
+                data-aos="fadeIn"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="100"
+              >
+                <img src="assets/icons/geo.svg" alt="geo" />
+                <div class="info__text">
+                  <h3>198 West 21th Street</h3>
+                  <p>Suite 721 New York NY 10016</p>
+                </div>
+              </li>
+              <li
+                class="info__item"
+                data-aos="fadeIn"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="200"
+              >
+                <img
+                  src="assets/icons/clock-circular-outline.svg"
+                  alt="clock"
+                />
+                <div class="info__text">
+                  <h3>Open Monday-Friday</h3>
+                  <p>8:00am - 9:00pm</p>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="info__right">
+              <li data-aos="fadeIn" data-aos-easing="ease-in-out">
+                <a href="#">
+                  <img src="assets/icons/facebook.svg" alt="facebook-icon" />
+                </a>
+              </li>
+              <li
+                data-aos="fadeIn"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="100"
+              >
+                <a href="#">
+                  <img src="assets/icons/twitter.svg" alt="twitter-icon" />
+                </a>
+              </li>
+              <li
+                data-aos="fadeIn"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="200"
+              >
+                <a href="#">
+                  <img src="assets/icons/instagram.svg" alt="instagram-icon" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="about" id="about">
+          <div class="about__part">
+            <img
+              srcset="
+                assets/images/about-720.webp   720w,
+                assets/images/about-1000.webp 1000w
+              "
+              sizes="
+                (max-width: 90em) 50vw, 100vw
+              "
+              src="assets/images/about-720.webp"
+              alt="restaurant"
+              loading="lazy"
+            />
+          </div>
+          <div class="about__part">
+            <div
+              class="about__text-box"
+              data-aos="fadeIn"
+              data-aos-easing="ease-in-out"
+            >
+              <h2 class="about__title">
+                WELCOME TO
+
+                <span
+                  ><img
+                    src="assets/icons/pizza(1).svg"
+                    alt="pizza-icon"
+                  />PIZZA</span
+                >
+                A RESTAURANT
+              </h2>
+              <p>
+                On her way she met a copy. The copy warned the Little Blind
+                Text, that where it came from it would have been rewritten a
+                thousand times and everything that was left from its origin
+                would be the word "and" and the Little Blind Text should turn
+                around and return to its own, safe country. But nothing the copy
+                said could convince her and so it didn’t take long until a few
+                insidious Copy Writers ambushed her, made her drunk with Longe
+                and Parole and dragged her into their agency, where they abused
+                her for their.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="services" id="services">
+          <div class="container">
+            <div
+              class="services__title-box"
+              data-aos="fadeIn"
+              data-aos-easing="ease-in-out"
+            >
+              <h2>OUR SERVICES</h2>
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+            <ul class="services__items">
+              <li
+                class="services__item"
+                data-aos="fadeIn"
+                data-aos-easing="ease-in-out"
+              >
+                <div class="services__icon-box">
+                  <img
+                    src="assets/icons/vegetables.svg"
+                    alt="vegetables-icon"
+                  />
+                </div>
+                <h3 class="services__item-title services__item-title--1">
+                  NATURAL ENGREDIENTS
+                </h3>
+                <p class="services__item-text services__item-text--1">
+                  Even the all-powerful Pointing has no control about the blind
+                  texts it is an almost unorthographic.
+                </p>
+              </li>
+              <li
+                class="services__item"
+                data-aos="fadeIn"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="100"
+              >
+                <div class="services__icon-box">
+                  <img
+                    src="assets/icons/tachometer.svg"
+                    alt="tachometer-icon"
+                  />
+                </div>
+                <h3 class="services__item-title services__item-title--2">
+                  FASTEST DELIVERY
+                </h3>
+                <p class="services__item-text services__item-text--2">
+                  Even the all-powerful Pointing has no control about the blind
+                  texts it is an almost unorthographic.
+                </p>
+              </li>
+              <li
+                class="services__item"
+                data-aos="fadeIn"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="200"
+              >
+                <div class="services__icon-box">
+                  <img src="assets/icons/pizza(2).svg" alt="pizza-slice-icon" />
+                </div>
+                <h3 class="services__item-title services__item-title--3">
+                  ORIGINAL RECIPES
+                </h3>
+                <p class="services__item-text services__item-text--3">
+                  Even the all-powerful Pointing has no control about the blind
+                  texts it is an almost unorthographic.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="menu" id="menu">
+          <div class="container">
+            <div
+              class="menu__title-box"
+              data-aos="fadeIn"
+              data-aos-easing="ease-in-out"
+            >
+              <h2>HOT PIZZA MEALS</h2>
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+          </div>
+          <ul class="menu__gallery">
+            <li class="menu__gal-item">
+              <div class="menu__gal-img">
+                <img
+                  srcset="
+                    assets/images/pizza-1-519.webp 519w,
+                    assets/images/pizza-1-350.webp 350w
+                  "
+                  sizes="(max-width: 120em) 25vw, 100vw"
+                  src="assets/images/pizza-1-350.webp"
+                  alt="pizza"
+                  loading="lazy"
+                />
+              </div>
+              <div class="overlay-darker"></div>
+              <div class="menu__gal-text">
+                <h3>Italian Pizza</h3>
+                <p>
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia
+                </p>
+                <span>$2.90</span>
+                <button class="menu__btn btn btn--white">Add to cart</button>
+              </div>
+            </li>
+            <li class="menu__gal-item">
+              <div class="menu__gal-img">
+                <img
+                  srcset="
+                    assets/images/pizza-2-519.webp 519w,
+                    assets/images/pizza-2-350.webp 350w
+                  "
+                  sizes="(max-width: 120em) 25vw, 100vw"
+                  src="assets/images/pizza-2-350.webp"
+                  alt="pizza"
+                  loading="lazy"
+                />
+              </div>
+              <div class="overlay-darker"></div>
+              <div class="menu__gal-text">
+                <h3>Greek Pizza</h3>
+                <p>
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia
+                </p>
+                <span>$2.90</span>
+                <button class="menu__btn btn btn--white">Add to cart</button>
+              </div>
+            </li>
+
+            <li class="menu__gal-item">
+              <div class="menu__gal-img">
+                <img
+                  srcset="
+                    assets/images/pizza-3-519.webp 519w,
+                    assets/images/pizza-3-350.webp 350w
+                  "
+                  sizes="(max-width: 120em) 25vw, 100vw"
+                  src="assets/images/pizza-3-350.webp"
+                  alt="pizza"
+                  loading="lazy"
+                />
+              </div>
+              <div class="overlay-darker"></div>
+              <div class="menu__gal-text">
+                <h3>American Pizza</h3>
+                <p>
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia
+                </p>
+                <span>$2.90</span>
+                <button class="menu__btn btn btn--white">Add to cart</button>
+              </div>
+            </li>
+            <li class="menu__gal-item">
+              <div class="menu__gal-img">
+                <img
+                  srcset="
+                    assets/images/pizza-4-519.webp 519w,
+                    assets/images/pizza-4-350.webp 350w
+                  "
+                  sizes="(max-width: 120em) 25vw, 100vw"
+                  src="assets/images/pizza-4-350.webp"
+                  alt="pizza"
+                  loading="lazy"
+                />
+              </div>
+              <div class="overlay-darker"></div>
+              <div class="menu__gal-text">
+                <h3>Tomatoe Pie</h3>
+                <p>
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia
+                </p>
+                <span>$2.90</span>
+                <button class="menu__btn btn btn--white">Add to cart</button>
+              </div>
+            </li>
+            <li class="menu__gal-item">
+              <div class="menu__gal-img">
+                <img
+                  srcset="
+                    assets/images/pizza-5-519.webp 519w,
+                    assets/images/pizza-5-350.webp 350w
+                  "
+                  sizes="(max-width: 120em) 25vw, 100vw"
+                  src="assets/images/pizza-5-350.webp"
+                  alt="pizza"
+                  loading="lazy"
+                />
+              </div>
+              <div class="overlay-darker"></div>
+              <div class="menu__gal-text">
+                <h3>Italian</h3>
+                <p>
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia
+                </p>
+                <span>$2.90</span>
+                <button class="menu__btn btn btn--white">Add to cart</button>
+              </div>
+            </li>
+            <li class="menu__gal-item">
+              <div class="menu__gal-img">
+                <img
+                  srcset="
+                    assets/images/pizza-6-519.webp 519w,
+                    assets/images/pizza-6-350.webp 350w
+                  "
+                  sizes="(max-width: 120em) 25vw, 100vw"
+                  src="assets/images/pizza-6-350.webp"
+                  alt="pizza"
+                  loading="lazy"
+                />
+              </div>
+              <div class="overlay-darker"></div>
+              <div class="menu__gal-text">
+                <h3>Carbonara</h3>
+                <p>
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia
+                </p>
+                <span>$2.90</span>
+                <button class="menu__btn btn btn--white">Add to cart</button>
+              </div>
+            </li>
+
+            <li class="menu__gal-item">
+              <div class="menu__gal-img">
+                <img
+                  srcset="
+                    assets/images/pizza-7-519.webp 519w,
+                    assets/images/pizza-7-350.webp 350w
+                  "
+                  sizes="(max-width: 120em) 25vw, 100vw"
+                  src="assets/images/pizza-7-350.webp"
+                  alt="pizza"
+                  loading="lazy"
+                />
+              </div>
+              <div class="overlay-darker"></div>
+              <div class="menu__gal-text">
+                <h3>Italian</h3>
+                <p>
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia
+                </p>
+                <span>$2.90</span>
+                <button class="menu__btn btn btn--white">Add to cart</button>
+              </div>
+            </li>
+
+            <li class="menu__gal-item">
+              <div class="menu__gal-img">
+                <img
+                  srcset="
+                    assets/images/pizza-8-519.webp 519w,
+                    assets/images/pizza-8-350.webp 350w
+                  "
+                  sizes="(max-width: 120em) 25vw, 100vw"
+                  src="assets/images/pizza-8-350.webp"
+                  alt="pizza"
+                  loading="lazy"
+                />
+              </div>
+              <div class="overlay-darker"></div>
+              <div class="menu__gal-text">
+                <h3>Italian Pizza</h3>
+                <p>
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia
+                </p>
+                <span>$2.90</span>
+                <button class="menu__btn btn btn--white">Add to cart</button>
+              </div>
+            </li>
+          </ul>
+
+          <div class="container">
+            <div
+              class="menu__title-box menu__title-box--pricing"
+              data-aos="fadeIn"
+              data-aos-easing="ease-in-out"
+            >
+              <h2>OUR MENU PRICING</h2>
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+
+            <ul class="menu__pricing">
+              <li class="menu__pricing-item">
+                <div class="menu__pricing-img">
+                  <img
+                    srcset="
+                      assets/images/pizza-1-3x.webp 3x,
+                      assets/images/pizza-1-2x.webp 2x,
+                      assets/images/pizza-1-1x.webp 1x
+                    "
+                    src="assets/images/pizza-1-1x.webp"
+                    alt="pizza"
+                  />
+                </div>
+                <div class="menu__text-box">
+                  <div class="menu__pricing-title">
+                    <h3>Italian Pizza</h3>
+                    <span>$20.00</span>
+                  </div>
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                  </p>
+                </div>
+              </li>
+              <li class="menu__pricing-item">
+                <div class="menu__pricing-img">
+                  <img
+                    srcset="
+                      assets/images/pizza-2-3x.webp 3x,
+                      assets/images/pizza-2-2x.webp 2x,
+                      assets/images/pizza-2-1x.webp 1x
+                    "
+                    src="assets/images/pizza-2-1x.webp"
+                    alt="pizza"
+                  />
+                </div>
+                <div class="menu__text-box">
+                  <div class="menu__pricing-title">
+                    <h3>Hawaiian Pizza</h3>
+                    <span>$20.00</span>
+                  </div>
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                  </p>
+                </div>
+              </li>
+              <li class="menu__pricing-item">
+                <div class="menu__pricing-img">
+                  <img
+                    srcset="
+                      assets/images/pizza-3-3x.webp 3x,
+                      assets/images/pizza-3-2x.webp 2x,
+                      assets/images/pizza-3-1x.webp 1x
+                    "
+                    src="assets/images/pizza-3-1x.webp"
+                    alt="pizza"
+                  />
+                </div>
+                <div class="menu__text-box">
+                  <div class="menu__pricing-title">
+                    <h3>Greek Pizza</h3>
+                    <span>$20.00</span>
+                  </div>
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                  </p>
+                </div>
+              </li>
+              <li class="menu__pricing-item">
+                <div class="menu__pricing-img">
+                  <img
+                    srcset="
+                      assets/images/pizza-4-3x.webp 3x,
+                      assets/images/pizza-4-2x.webp 2x,
+                      assets/images/pizza-4-1x.webp 1x
+                    "
+                    src="assets/images/pizza-4-1x.webp"
+                    alt="pizza"
+                  />
+                </div>
+                <div class="menu__text-box">
+                  <div class="menu__pricing-title">
+                    <h3>Bacon Crispy Thins</h3>
+                    <span>$20.00</span>
+                  </div>
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                  </p>
+                </div>
+              </li>
+              <li class="menu__pricing-item">
+                <div class="menu__pricing-img">
+                  <img
+                    srcset="
+                      assets/images/pizza-5-3x.webp 3x,
+                      assets/images/pizza-5-2x.webp 2x,
+                      assets/images/pizza-5-1x.webp 1x
+                    "
+                    src="assets/images/pizza-5-1x.webp"
+                    alt="pizza"
+                  />
+                </div>
+                <div class="menu__text-box">
+                  <div class="menu__pricing-title">
+                    <h3>Hawaiian Special</h3>
+                    <span>$20.00</span>
+                  </div>
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                  </p>
+                </div>
+              </li>
+              <li class="menu__pricing-item">
+                <div class="menu__pricing-img">
+                  <img
+                    srcset="
+                      assets/images/pizza-6-3x.webp 3x,
+                      assets/images/pizza-6-2x.webp 2x,
+                      assets/images/pizza-6-1x.webp 1x
+                    "
+                    src="assets/images/pizza-6-1x.webp"
+                    alt="pizza"
+                  />
+                </div>
+                <div class="menu__text-box">
+                  <div class="menu__pricing-title">
+                    <h3>Ultimate Overload</h3>
+                    <span>$20.00</span>
+                  </div>
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                  </p>
+                </div>
+              </li>
+              <li class="menu__pricing-item">
+                <div class="menu__pricing-img">
+                  <img
+                    srcset="
+                      assets/images/pizza-7-3x.webp 3x,
+                      assets/images/pizza-7-2x.webp 2x,
+                      assets/images/pizza-7-1x.webp 1x
+                    "
+                    src="assets/images/pizza-7-1x.webp"
+                    alt="pizza"
+                  />
+                </div>
+                <div class="menu__text-box">
+                  <div class="menu__pricing-title">
+                    <h3>Bacon Pizza</h3>
+                    <span>$20.00</span>
+                  </div>
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                  </p>
+                </div>
+              </li>
+              <li class="menu__pricing-item">
+                <div class="menu__pricing-img">
+                  <img
+                    srcset="
+                      assets/images/pizza-8-3x.webp 3x,
+                      assets/images/pizza-8-2x.webp 2x,
+                      assets/images/pizza-8-1x.webp 1x
+                    "
+                    src="assets/images/pizza-8-1x.webp"
+                    alt="pizza"
+                  />
+                </div>
+                <div class="menu__text-box">
+                  <div class="menu__pricing-title">
+                    <h3>Ham & Pineapple</h3>
+                    <span>$20.00</span>
+                  </div>
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu__secn">
+            <div
+              class="menu__secn-img"
+              data-aos="fadeIn"
+              data-aos-easing="ease-in-out"
+            >
+              <img
+                srcset="
+                  assets/images/about-1000.webp 1000w,
+                  assets/images/about-720.webp   720w
+                "
+                sizes="
+                    (max-width: 120em) 31vw, 100vw
+                  "
+                src="assets/images/about-720.webp"
+                alt="restaurant"
+                loading="lazy"
+              />
+            </div>
+            <div
+              class="menu__secn-tabs"
+              data-aos="fadeIn"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="100"
+            >
+              <ul class="menu__secn-tabs-menu">
+                <li class="menu__secn-list-item">
+                  <button class="menu__secn-btn btn btn--secondary__active">
+                    Burgers
+                  </button>
+                </li>
+                <li class="menu__secn-list-item">
+                  <button class="menu__secn-btn btn btn--secondary">
+                    Pasta
+                  </button>
+                </li>
+                <li class="menu__secn-list-item">
+                  <button class="menu__secn-btn btn btn--secondary">
+                    Drinks
+                  </button>
+                </li>
+              </ul>
+
+              <ul class="menu__secn-wrapper">
+                <li class="menu__secn-items" id="Burgers">
+                  <ul class="menu__secn-item">
+                    <li class="menu__secn-food">
+                      <a href="#" class="menu__secn-food-img">
+                        <img
+                          srcset="
+                            assets/images/burger-1-894.webp 894w,
+                            assets/images/burger-1-300.webp 300w
+                          "
+                          sizes="(max-width: 120em) 13vw, 100vw"
+                          src="assets/images/burger-1-300.webp"
+                          alt="burger"
+                          loading="lazy"
+                        />
+                      </a>
+                      <div class="menu__secn-text-box">
+                        <h3>Burger Classic</h3>
+                        <p>
+                          Far far away, behind the word mountains, far from the
+                          countries Vokalia and Consonantia.
+                        </p>
+                        <span>$2.90</span>
+                        <button class="btn btn--white">Add to cart</button>
+                      </div>
+                    </li>
+                    <li class="menu__secn-food">
+                      <a href="#" class="menu__secn-food-img">
+                        <img
+                          srcset="
+                            assets/images/burger-2-1028.webp 1028w,
+                            assets/images/burger-2-300.webp   300w
+                          "
+                          sizes="(max-width: 120em) 13vw, 100vw"
+                          src="assets/images/burger-2-300.webp"
+                          alt="burger"
+                          loading="lazy"
+                        />
+                      </a>
+                      <div class="menu__secn-text-box">
+                        <h3 class="menu__secn-title">Burger Double</h3>
+                        <p>
+                          Far far away, behind the word mountains, far from the
+                          countries Vokalia and Consonantia.
+                        </p>
+                        <span>$2.90</span>
+                        <button class="btn btn--white">Add to cart</button>
+                      </div>
+                    </li>
+                    <li class="menu__secn-food">
+                      <a href="#" class="menu__secn-food-img">
+                        <img
+                          srcset="
+                            assets/images/burger-3-941.webp 941w,
+                            assets/images/burger-3-300.webp 300w
+                          "
+                          sizes="(max-width: 120em) 13vw, 100vw"
+                          src="assets/images/burger-3-300.webp"
+                          alt="burger"
+                          loading="lazy"
+                        />
+                      </a>
+                      <div class="menu__secn-text-box">
+                        <h3 class="menu__secn-title">Burger Mega</h3>
+                        <p>
+                          Far far away, behind the word mountains, far from the
+                          countries Vokalia and Consonantia.
+                        </p>
+                        <span>$2.90</span>
+                        <button class="btn btn--white">Add to cart</button>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="menu__secn-items" id="Pasta">
+                  <ul class="menu__secn-item">
+                    <li class="menu__secn-food">
+                      <a href="#" class="menu__secn-food-img">
+                        <img
+                          srcset="
+                            assets/images/pasta-1-1038.webp 1038w,
+                            assets/images/pasta-1-300.webp   300w
+                          "
+                          sizes="(max-width: 120em) 13vw, 100vw"
+                          src="assets/images/pasta-1-300.webp"
+                          alt="pasta"
+                          loading="lazy"
+                        />
+                      </a>
+                      <div class="menu__secn-text-box">
+                        <h3 class="menu__secn-title">Italian Pasta</h3>
+                        <p>
+                          Far far away, behind the word mountains, far from the
+                          countries Vokalia and Consonantia.
+                        </p>
+                        <span>$2.90</span>
+                        <button class="btn btn--white">Add to cart</button>
+                      </div>
+                    </li>
+                    <li class="menu__secn-food">
+                      <a href="#" class="menu__secn-food-img">
+                        <img
+                          srcset="
+                            assets/images/pasta-2-823.webp 823w,
+                            assets/images/pasta-2-300.webp 300w
+                          "
+                          sizes="(max-width: 120em) 13vw, 100vw"
+                          src="assets/images/pasta-2-300.webp"
+                          alt="pasta"
+                          loading="lazy"
+                        />
+                      </a>
+                      <div class="menu__secn-text-box">
+                        <h3 class="menu__secn-title">Italian Pasta</h3>
+                        <p>
+                          Far far away, behind the word mountains, far from the
+                          countries Vokalia and Consonantia.
+                        </p>
+                        <span>$2.90</span>
+                        <button class="btn btn--white">Add to cart</button>
+                      </div>
+                    </li>
+                    <li class="menu__secn-food">
+                      <a href="#" class="menu__secn-food-img">
+                        <img
+                          srcset="
+                            assets/images/pasta-3-982.webp 823w,
+                            assets/images/pasta-3-300.webp 300w
+                          "
+                          sizes="(max-width: 120em) 13vw, 100vw"
+                          src="assets/images/pasta-3-300.webp"
+                          alt="pasta"
+                          loading="lazy"
+                        />
+                      </a>
+                      <div class="menu__secn-text-box">
+                        <h3 class="menu__secn-title">Italian Pasta</h3>
+                        <p>
+                          Far far away, behind the word mountains, far from the
+                          countries Vokalia and Consonantia.
+                        </p>
+                        <span>$2.90</span>
+                        <button class="btn btn--white">Add to cart</button>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="menu__secn-items" id="Drinks">
+                  <ul class="menu__secn-item">
+                    <li class="menu__secn-food">
+                      <a href="#" class="menu__secn-food-img">
+                        <img
+                          srcset="
+                            assets/images/drink-1-800.webp 800w,
+                            assets/images/drink-1-300.webp 300w
+                          "
+                          sizes="(max-width: 120em) 13vw, 100vw"
+                          src="assets/images/drink-1-300.webp"
+                          alt="drink"
+                          loading="lazy"
+                        />
+                      </a>
+                      <div class="menu__secn-text-box">
+                        <h3>Lemonade Juice</h3>
+                        <p>
+                          Far far away, behind the word mountains, far from the
+                          countries Vokalia and Consonantia.
+                        </p>
+                        <span>$2.90</span>
+                        <button class="btn btn--white">Add to cart</button>
+                      </div>
+                    </li>
+                    <li class="menu__secn-food">
+                      <a href="#" class="menu__secn-food-img">
+                        <img
+                          srcset="
+                            assets/images/drink-2-800.webp 800w,
+                            assets/images/drink-2-300.webp 300w
+                          "
+                          sizes="(max-width: 120em) 13vw, 100vw"
+                          src="assets/images/drink-2-300.webp"
+                          alt="drink"
+                          loading="lazy"
+                        />
+                      </a>
+                      <div class="menu__secn-text-box">
+                        <h3>Pineapple Juice</h3>
+                        <p>
+                          Far far away, behind the word mountains, far from the
+                          countries Vokalia and Consonantia.
+                        </p>
+                        <span>$2.90</span>
+                        <button class="btn btn--white">Add to cart</button>
+                      </div>
+                    </li>
+                    <li class="menu__secn-food">
+                      <a href="#" class="menu__secn-food-img">
+                        <img
+                          srcset="
+                            assets/images/drink-3-800.webp 800w,
+                            assets/images/drink-3-300.webp 300w
+                          "
+                          sizes="(max-width: 120em) 13vw, 100vw"
+                          src="assets/images/drink-3-300.webp"
+                          alt="drink"
+                          loading="lazy"
+                        />
+                      </a>
+                      <div class="menu__secn-text-box">
+                        <h3>Soda Drinks</h3>
+                        <p>
+                          Far far away, behind the word mountains, far from the
+                          countries Vokalia and Consonantia.
+                        </p>
+                        <span>$2.90</span>
+                        <button class="btn btn--white">Add to cart</button>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <div class="counters">
+          <div class="overlay overlay--dark"></div>
+          <ul class="counters__list container">
+            <li
+              class="counters__list-item"
+              data-aos="fadeIn"
+              data-aos-easing="ease-in-out"
+              offset="500"
+            >
+              <div class="counters__icon-box">
+                <img src="assets/icons/pizza.svg" alt="pizza-slice" />
+              </div>
+              <span class="counters__number" data-target="100">0</span>
+              <span class="counters__label">Pizza Branches</span>
+            </li>
+            <li
+              class="counters__list-item"
+              data-aos="fadeIn"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="100"
+            >
+              <div class="counters__icon-box">
+                <img src="assets/icons/medal.svg" alt="medal-icon" />
+              </div>
+              <span class="counters__number" data-target="85">0</span>
+              <span class="counters__label">Number of Awards</span>
+            </li>
+
+            <li
+              class="counters__list-item"
+              data-aos="fadeIn"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="200"
+            >
+              <div class="counters__icon-box">
+                <img src="assets/icons/fun.svg" alt="happy-faces" />
+              </div>
+              <span class="counters__number" data-target="10567">0</span>
+              <span class="counters__label">Happy Customers</span>
+            </li>
+
+            <li
+              class="counters__list-item"
+              data-aos="fadeIn"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="300"
+            >
+              <div class="counters__icon-box">
+                <img src="assets/icons/chef.svg" alt="chef-icon" />
+              </div>
+              <span class="counters__number" data-target="900">0</span>
+              <span class="counters__label">Staff</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="img-gallery">
+          <ul class="img-gallery__list">
+            <li
+              class="img-gallery__list-item"
+              data-aos="fadeIn"
+              data-aos-easing="ease-in-out"
+            >
+              <a href="#" class="img-gallery__img">
+                <img
+                  srcset="
+                    assets/images/gallery-1-800.webp 800w,
+                    assets/images/gallery-1-620.webp 620w
+                  "
+                  sizes="(max-width: 120em) 25vw, 100vw"
+                  src="assets/images/gallery-1-620.webp"
+                  alt="restaurant"
+                  loading="lazy"
+                />
+              </a>
+              <div class="img-gallery__icon-box">
+                <img src="assets/icons/loupe.svg" alt="loupe-icon" />
+              </div>
+            </li>
+            <li
+              class="img-gallery__list-item"
+              data-aos="fadeIn"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="100"
+            >
+              <a href="#" class="img-gallery__img">
+                <img
+                  srcset="
+                    assets/images/gallery-2-800.webp 800w,
+                    assets/images/gallery-2-650.webp 620w
+                  "
+                  sizes="(max-width: 120em) 25vw, 100vw"
+                  src="assets/images/gallery-2-650.webp"
+                  alt="restaurant"
+                  loading="lazy"
+                />
+              </a>
+              <div class="img-gallery__icon-box">
+                <img src="assets/icons/loupe.svg" alt="loupe-icon" />
+              </div>
+            </li>
+            <li
+              class="img-gallery__list-item"
+              data-aos="fadeIn"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="200"
+            >
+              <a href="#" class="img-gallery__img">
+                <img
+                  srcset="
+                    assets/images/gallery-3-800.webp 800w,
+                    assets/images/gallery-3-650.webp 620w
+                  "
+                  sizes="(max-width: 120em) 25vw, 100vw"
+                  src="assets/images/gallery-3-650.webp"
+                  alt="restaurant"
+                  loading="lazy"
+                />
+              </a>
+              <div class="img-gallery__icon-box">
+                <img src="assets/icons/loupe.svg" alt="loupe-icon" />
+              </div>
+            </li>
+            <li
+              class="img-gallery__list-item"
+              data-aos="fadeIn"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="300"
+            >
+              <a href="#" class="img-gallery__img">
+                <img
+                  srcset="
+                    assets/images/gallery-4-800.webp 800w,
+                    assets/images/gallery-4-650.webp 620w
+                  "
+                  sizes="(max-width: 120em) 25vw, 100vw"
+                  src="assets/images/gallery-4-650.webp"
+                  alt="restaurant"
+                  loading="lazy"
+                />
+              </a>
+              <div class="img-gallery__icon-box">
+                <img src="assets/icons/loupe.svg" alt="loupe-icon" />
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <section class="blog" id="blog">
+          <div class="container">
+            <div
+              class="blog__title-box"
+              data-aos="fadeIn"
+              data-aos-easing="ease-in-out"
+            >
+              <h2>RECENT FROM BLOG</h2>
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+
+            <ul class="blog__list">
+              <li
+                class="blog__list-item"
+                data-aos="fadeIn"
+                data-aos-easing="ease-in-out"
+              >
+                <a href="#" class="blog__img">
+                  <img
+                    srcset="
+                      assets/images/image-1-800.webp 800w,
+                      assets/images/image-1-500.webp 500w
+                    "
+                    sizes="(max-width: 120em) 26vw, 100vw"
+                    src="assets/images/image-1-500.webp"
+                    alt="restaurant"
+                    loading="lazy"
+                  />
+                </a>
+                <div class="blog__text">
+                  <p class="blog__info">
+                    Sept 10, 2018 Admin 3
+                  </p>
+                  <h3 class="blog__list-title">The Delicious Pizza</h3>
+                  <p class="blog__list-description">
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia.
+                  </p>
+                </div>
+              </li>
+
+              <li
+                class="blog__list-item"
+                data-aos="fadeIn"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="100"
+              >
+                <a href="#" class="blog__img">
+                  <img
+                    srcset="
+                      assets/images/image-2-1920.webp 1920w,
+                      assets/images/image-2-500.webp   500w
+                    "
+                    sizes="(max-width: 120em) 26vw, 100vw"
+                    src="assets/images/image-2-500.webp"
+                    alt="restaurant"
+                    loading="lazy"
+                  />
+                </a>
+                <div class="blog__text">
+                  <p class="blog__info">
+                    Sept 10, 2018 Admin 3
+                  </p>
+                  <h3 class="blog__list-title">The Delicious Pizza</h3>
+                  <p class="blog__list-description">
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia.
+                  </p>
+                </div>
+              </li>
+
+              <li
+                class="blog__list-item"
+                data-aos="fadeIn"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="200"
+              >
+                <a href="#" class="blog__img">
+                  <img
+                    srcset="
+                      assets/images/image-3-800.webp 800w,
+                      assets/images/image-3-650.webp 650w
+                    "
+                    sizes="(max-width: 120em) 26vw, 100vw"
+                    src="assets/images/image-3-650.webp"
+                    alt="restaurant"
+                    loading="lazy"
+                  />
+                </a>
+                <div class="blog__text">
+                  <p class="blog__info">
+                    Sept 10, 2018 Admin 3
+                  </p>
+                  <h3 class="blog__list-title">The Delicious Pizza</h3>
+                  <p class="blog__list-description">
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="contact" id="contact">
+          <div class="contact__map"></div>
+          <div
+            class="contact__form-wrapper"
+            data-aos="fadeIn"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="100"
+          >
+            <form class="contact__form">
+              <h2 class="contact__title">Contact Us</h2>
+              <div class="contact__input-field">
+                <input
+                  class="contact__input"
+                  type="text"
+                  name="first-name"
+                  autocomplete="off"
+                  id="first-name"
+                />
+                <label class="contact__label" for="first-name"
+                  >First Name</label
+                >
+              </div>
+
+              <div class="contact__input-field">
+                <input
+                  class="contact__input"
+                  type="email"
+                  name="email"
+                  autocomplete="off"
+                  id="email"
+                />
+                <label class="contact__label" for="email">Email</label>
+              </div>
+
+              <div class="contact__textarea-field">
+                <textarea
+                  class="contact__textarea"
+                  name="message"
+                  autocomplete="off"
+                  id="message"
+                ></textarea>
+                <label class="contact__textarea-label" for="message"
+                  >Message</label
+                >
+              </div>
+
+              <button class="contact__btn btn btn--primary">Send</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>
+          This template was recreated by <a href="#">Arnur Kupanov</a> |
+          <a href="https://colorlib.com/preview/theme/pizza/index.html#">
+            Original version
+          </a>
+        </p>
+        <p>
+          Copyright &copy;2020 All rights reserved |
+          <a href="https://colorlib.com/">Colorlib</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

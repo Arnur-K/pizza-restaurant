@@ -1,0 +1,20 @@
+.footer {
+  padding: $i-large-mega;
+  background-color: black;
+  text-align: center;
+  font-size: $fs-medium;
+  color: $gray-light;
+  font-weight: 300;
+
+  @include respond(phone) {
+    padding: $i-large-mega 5%;
+  }
+
+  p:first-child {
+    margin-bottom: $i-large;
+  }
+
+  a {
+    color: $yellow-1;
+  }
+}

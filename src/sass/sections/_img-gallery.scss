@@ -1,0 +1,65 @@
+.img-gallery {
+  background: url('../assets/images/bg-4-1920.webp');
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__list {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 25%);
+    grid-auto-rows: 40rem;
+
+    @include respond(phone) {
+      grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    }
+  }
+
+  &__list-item {
+    @include flex-center-row;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &__img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+
+  &__icon-box {
+    background-color: $yellow-1;
+    width: 6.5rem;
+    height: 6.5rem;
+    opacity: 0;
+    @include flex-center-row;
+    transition: all 0.5s;
+
+    img {
+      width: $fs-large;
+      transition: all 0.5s;
+    }
+  }
+
+  &__list-item:hover &__icon-box {
+    opacity: 1;
+    transform: rotate(135deg);
+  }
+
+  &__list-item:hover &__icon-box img {
+    transform: rotate(-135deg);
+  }
+}

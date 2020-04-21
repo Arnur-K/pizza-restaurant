@@ -1,0 +1,45 @@
+.btn {
+   font-weight: 300;
+   font-size: $fs-small;
+   transition: all 0.2s;
+
+   &--primary {
+      background-color: $yellow-1;
+      border: 0.1rem solid $yellow-1;
+
+      &:hover,
+      &:focus {
+         color: $yellow-1;
+         background-color: transparent;
+      }
+   }
+
+   &--secondary {
+      background-color: transparent;
+      color: $yellow-1;
+      border: 0.1rem solid $yellow-1;
+
+      &:hover,
+      &:focus {
+         color: $black;
+         background-color: $yellow-1;
+      }
+
+      &__active {
+         color: $black;
+         background-color: $yellow-1;
+         border: 0.1rem solid $yellow-1;
+      }
+   }
+
+   &--white {
+      background-color: transparent;
+      color: $white;
+      border: 0.1rem solid $white;
+      &:hover,
+      &:focus {
+         color: $black;
+         background-color: $yellow-1;
+      }
+   }
+}

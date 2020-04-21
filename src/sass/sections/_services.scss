@@ -1,0 +1,92 @@
+.services {
+  position: relative;
+  background: url('../assets/images/food.webp');
+  padding: $i-large-mega 0;
+
+  &__title-box {
+    text-align: center;
+
+    & h2 {
+      font-size: $fs-large-m;
+      font-weight: 400;
+      margin-bottom: $i-large-x;
+    }
+
+    & p {
+      width: 50%;
+      margin: 0 auto;
+      font-weight: 300;
+      font-size: $fs-small;
+
+      @include respond(phone) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: $i-large-xxl;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: $i-large-s;
+
+    @include respond(phone) {
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    width: fit-content;
+    padding: $i-large-x 0 $i-large-x 0;
+    transition: all 0.3s;
+  }
+
+  &__item-title {
+    margin-bottom: $i-large-s;
+    font-size: $fs-large;
+    font-weight: 400;
+  }
+
+  &__item-text {
+    width: 70%;
+    margin: 0 auto;
+    font-size: $fs-small;
+    font-weight: 300;
+    color: $brown;
+  }
+
+  &__icon-box {
+    @include flex-center-row;
+
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto $i-large-x auto;
+    border: 0.1rem solid $brown;
+    transition: all 0.3s;
+  }
+
+  img {
+    width: 5rem;
+    transition: transform 0.3s;
+  }
+
+  &__item:hover &__icon-box {
+    background-color: $yellow;
+    border: 0.1rem solid $yellow;
+    transform: rotate(135deg);
+  }
+
+  &__item:hover img {
+    transform: rotate(-135deg);
+  }
+}

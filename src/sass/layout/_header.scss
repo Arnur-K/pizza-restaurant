@@ -1,0 +1,129 @@
+.header {
+  position: fixed;
+  width: 100%;
+  height: 9rem;
+  background-color: black;
+  z-index: 10;
+  transition: height 0.3s ease-in-out;
+
+  &--scrolled {
+    height: 6rem;
+  }
+
+  @include respond(tab-port) {
+    display: flex;
+  }
+
+  &__nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(tab-port) {
+      width: fit-content;
+      margin-left: 5%;
+    }
+  }
+
+  &__logo {
+    font-family: $f-josefin;
+    color: $white;
+  }
+
+  &__logo img {
+    display: inline-block;
+    margin-right: $i-small;
+    height: 2.5rem;
+  }
+
+  &__logo span {
+    display: inline-block;
+    font-size: 2.5rem;
+  }
+
+  &__logo small {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.44rem;
+    color: $yellow-1;
+  }
+
+  &__nav-list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__list-item:not(:last-child) {
+    margin-right: $i-large-x;
+  }
+
+  &__nav-link {
+    font-size: $fs-small;
+    font-weight: 300;
+    color: $gray-light;
+    border-bottom: 0.1rem solid transparent;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+
+  &__nav-mobile {
+    position: fixed;
+    width: 100%;
+    transform: translateY(-100%);
+    background-color: rgba(black, 0.75);
+    transition: transform 0.3s ease-in-out;
+
+    &--show {
+      transform: translateY(9rem);
+    }
+  }
+
+  &--scrolled &__nav-mobile--show {
+    transform: translateY(6rem);
+  }
+
+  &--scrolled &__nav-list-mobile {
+    padding: 5rem 0;
+  }
+
+  &__nav-list-mobile {
+    display: none;
+
+    @include respond(tab-port) {
+      display: flex;
+    }
+
+    flex-direction: column;
+    padding: $i-large-mega 0;
+    text-align: right;
+    font-size: $fs-large;
+    transition: padding 0.3s ease-in-out;
+  }
+
+  &__nav-list-item-mobile:not(:last-child) {
+    margin-bottom: $i-large-x;
+  }
+
+  &__nav-link-mobile {
+    color: $gray-light;
+
+    &:active,
+    &:hover {
+      color: $yellow-1;
+    }
+  }
+}
+
+.active {
+  color: $yellow-1;
+}

@@ -1,0 +1,16 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+
+  @include respond(tab-port) {
+    width: 90%;
+  }
+}
+
+.u-margin-right-small {
+  margin-right: $i-small;
+}
+
+.u-margin-right-medium {
+  margin-right: $i-medium;
+}

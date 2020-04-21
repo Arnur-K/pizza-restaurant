@@ -1,0 +1,88 @@
+.info {
+  height: 15rem;
+  width: 100%;
+
+  @include respond(tab-port) {
+    height: auto;
+  }
+
+  &__content {
+    height: 100%;
+    display: flex;
+    background-color: $black;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    width: 75%;
+    background-color: $black;
+
+    img {
+      margin-top: $i-small;
+      margin-right: $i-large-s;
+    }
+
+    @include respond(tab-port) {
+      height: 15rem;
+    }
+  }
+
+  &__right {
+    width: 25%;
+    background-color: $yellow-1;
+
+    @include respond(tab-port) {
+      height: 5rem;
+    }
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    img {
+      display: block;
+      width: 2.2rem;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+
+  &__left {
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: unset;
+      align-items: initial;
+      height: 30rem;
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__text {
+    & h3 {
+      color: $white;
+      margin-bottom: $i-large;
+      font-size: $fs-small-s;
+      font-weight: 400;
+    }
+
+    & p {
+      color: $gray;
+      font-size: $fs-small;
+      font-weight: 300;
+    }
+  }
+}

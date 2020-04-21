@@ -1,0 +1,72 @@
+.about {
+  display: flex;
+  position: relative;
+  background: url('../assets/images/bg-4-1920.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
+  &__part {
+    width: 50%;
+  }
+
+  &__part:nth-child(1) {
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__part:nth-child(2) {
+    margin: $i-large-mega 0;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
+  &__text-box {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+
+    @include respond(tab-port) {
+      justify-content: space-evenly;
+    }
+
+    @include respond(phone) {
+    }
+  }
+
+  &__title {
+    font-size: $fs-large-m;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: $white;
+
+    img {
+      width: 3rem;
+    }
+
+    span {
+      color: $yellow-1;
+      font-family: $f-josefin;
+    }
+  }
+
+  p {
+    font-size: $fs-small-s;
+    font-weight: 300;
+    line-height: 1.8;
+    color: $gray;
+  }
+}
